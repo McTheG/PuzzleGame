@@ -11,15 +11,17 @@
     tools:context="com.example.elvin.puzzlegame.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textX"/>
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textY"/>
+        android:id="@+id/textY"
+        android:layout_below="@id/textX"/>
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textZ"/>
+        android:id="@+id/textZ"
+        android:layout_below="@id/textY"/>
 </RelativeLayout>
