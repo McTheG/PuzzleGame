@@ -8,8 +8,6 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageView;
 
 public class LightOut extends AppCompatActivity implements SensorEventListener {
     private SensorManager mSensorManager;
