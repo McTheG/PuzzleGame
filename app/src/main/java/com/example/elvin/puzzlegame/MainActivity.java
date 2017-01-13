@@ -422,6 +422,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         {
             Toast.makeText(MainActivity.this,"You solved the puzzle!!!", Toast.LENGTH_SHORT).show();
             numberHint.setTextColor(Color.RED);
+            //sleep needed!!!
+            randomizer();
             Continue();
         }
         else{
