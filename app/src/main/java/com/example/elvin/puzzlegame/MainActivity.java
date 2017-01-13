@@ -14,7 +14,6 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import java.util.ArrayList;
 
 
@@ -24,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private Sensor mySensor;
     private SensorManager SensorManager;
     private ImageView lock1_imageView, lock2_imageView, lock3_imageView;
+    private int selectedLock = 1;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -56,16 +56,60 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         //Postive Numbers
         if(event.values[0] > 0 && event.values[0] < 1) {
-            lock1_imageView.setImageResource(R.drawable.number0);
+            if(selectedLock == 1) {
+                lock1_imageView.setImageResource(R.drawable.number0);
+
+            }
+            if(selectedLock == 2) {
+                lock2_imageView.setImageResource(R.drawable.number0);
+
+            }
+            if(selectedLock == 3) {
+                lock3_imageView.setImageResource(R.drawable.number0);
+
+            }
         }
         if(event.values[0] > 1 && event.values[0] < 2) {
-            lock1_imageView.setImageResource(R.drawable.number1);
+            if(selectedLock == 1) {
+                lock1_imageView.setImageResource(R.drawable.number1);
+
+            }
+            if(selectedLock == 2) {
+                lock2_imageView.setImageResource(R.drawable.number1);
+
+            }
+            if(selectedLock == 3) {
+                lock3_imageView.setImageResource(R.drawable.number1);
+
+            }
         }
         if(event.values[0] > 2 && event.values[0] < 3) {
-            lock1_imageView.setImageResource(R.drawable.number2);
+            if(selectedLock == 1) {
+                lock1_imageView.setImageResource(R.drawable.number2);
+
+            }
+            if(selectedLock == 2) {
+                lock2_imageView.setImageResource(R.drawable.number2);
+
+            }
+            if(selectedLock == 3) {
+                lock3_imageView.setImageResource(R.drawable.number2);
+
+            }
         }
         if(event.values[0] > 3 && event.values[0] < 4) {
-            lock1_imageView.setImageResource(R.drawable.number3);
+            if(selectedLock == 1) {
+                lock1_imageView.setImageResource(R.drawable.number3);
+
+            }
+            if(selectedLock == 2) {
+                lock2_imageView.setImageResource(R.drawable.number3);
+
+            }
+            if(selectedLock == 3) {
+                lock3_imageView.setImageResource(R.drawable.number3);
+
+            }
         }
         if(event.values[0] > 4 && event.values[0] < 5) {
             lock1_imageView.setImageResource(R.drawable.number4);
