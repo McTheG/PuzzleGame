@@ -9,10 +9,10 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/lockbackground"
     tools:context="com.example.elvin.puzzlegame.MainActivity">
 
     <TextView
-        android:text="X"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textX"
@@ -20,7 +20,6 @@
         android:layout_marginTop="40dp"/>
 
     <TextView
-        android:text="Y"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textY"
@@ -28,7 +27,6 @@
         android:layout_marginTop="70dp"/>
 
     <TextView
-        android:text="Z"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textZ"
@@ -60,5 +58,73 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_height="400px" />
+
+    <Button
+        android:text="LOCK 1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lock1_button"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick"/>
+
+    <Button
+        android:text="LOCK 2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lock2_button"
+        android:layout_alignBaseline="@+id/lock1_button"
+        android:layout_alignBottom="@+id/lock1_button"
+        android:layout_alignLeft="@+id/lock2_imageView"
+        android:layout_alignStart="@+id/lock2_imageView"
+        android:onClick="onClick"/>
+
+    <TextView
+        android:text="000"
+        android:layout_width="wrap_content"
+        android:layout_height="200px"
+        android:layout_alignLeft="@+id/lock2_button"
+        android:layout_alignStart="@+id/lock2_button"
+        android:id="@+id/numberHint"
+        android:layout_alignRight="@+id/lock2_button"
+        android:layout_alignEnd="@+id/lock2_button"
+        android:layout_above="@+id/lock2_button"
+        android:textSize="48sp"
+        android:textAlignment="center"
+        android:background="@drawable/paper"/>
+
+    <Button
+        android:text="LOCK 3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lock3_button"
+        android:onClick="onClick"
+        android:layout_alignBaseline="@+id/lock2_button"
+        android:layout_alignBottom="@+id/lock2_button"
+        android:layout_alignLeft="@+id/lock3_imageView"
+        android:layout_alignStart="@+id/lock3_imageView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/textView3"
+        android:layout_alignBottom="@+id/textY"
+        android:layout_toRightOf="@+id/lock2_imageView"
+        android:layout_toEndOf="@+id/lock2_imageView" />
+
+    <Button
+        android:text="RESET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/numberHint"
+        android:layout_alignEnd="@+id/numberHint"
+        android:id="@+id/resetButton"
+        android:onClick="onClick"
+        android:background="?android:attr/colorPressedHighlight" />
 
 </RelativeLayout>
