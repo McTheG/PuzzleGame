@@ -8,13 +8,13 @@
     <string name="lock2">LOCK 2</string>
     <string name="lock3">LOCK 3</string>
 
-    <string name="underlock1">under LOCK 1</string>
-    <string name="underlock2">under LOCK 2</string>
-    <string name="underlock3">under LOCK 3</string>
+    <string name="underLock1">under LOCK 1</string>
+    <string name="underLock2">under LOCK 2</string>
+    <string name="underLock3">under LOCK 3</string>
 
     <string name="win">You Won</string>
     <string name="playAgain">Play Again</string>
     <string name="talk">Talk with someone</string>
     <string name="dark">Make it dark</string>
-    <string name="randombtn">Just a random button</string>
+    <string name="randomBtn">Just a random button</string>
 </resources>

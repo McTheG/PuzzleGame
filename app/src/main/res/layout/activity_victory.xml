@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerVertical="true"
     android:fitsSystemWindows="true"
     tools:context="com.example.elvin.puzzlegame.Victory">
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true">
 
         <TextView
             android:text="@string/win"
@@ -31,6 +26,4 @@
             android:textSize="50sp"
             android:id="@+id/newGame"
             android:background="@color/colorPrimary"/>
-    </LinearLayout>
-
-</RelativeLayout>
+    </>

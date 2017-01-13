@@ -31,7 +31,7 @@
         android:layout_below="@+id/imageButton3"
         android:layout_alignLeft="@+id/imageButton2"
         android:layout_alignStart="@+id/imageButton2"
-        android:contentDescription="@string/randombtn"/>
+        android:contentDescription="@string/randomBtn"/>
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -44,7 +44,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="81dp"
-        android:contentDescription="@string/randombtn"/>
+        android:contentDescription="@string/randomBtn"/>
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -57,7 +57,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginLeft="33dp"
         android:layout_marginStart="33dp"
-        android:contentDescription="@string/randombtn"/>
+        android:contentDescription="@string/randomBtn"/>
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -70,6 +70,6 @@
         android:layout_marginLeft="47dp"
         android:layout_marginStart="47dp"
         android:layout_marginTop="33dp"
-        android:contentDescription="@string/randombtn"/>
+        android:contentDescription="@string/randomBtn"/>
 
 </RelativeLayout>

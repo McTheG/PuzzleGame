@@ -100,7 +100,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:contentDescription="@string/underlock1"/>
+                android:contentDescription="@string/underLock1"/>
 
             <ImageView
                 android:background="@drawable/number0"
@@ -108,7 +108,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:contentDescription="@string/underlock2"/>
+                android:contentDescription="@string/underLock2"/>
 
             <ImageView
                 android:background="@drawable/number0"
@@ -116,7 +116,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:contentDescription="@string/underlock3"/>
+                android:contentDescription="@string/underLock3"/>
 
         </LinearLayout>
 
