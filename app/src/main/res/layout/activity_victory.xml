@@ -26,4 +26,5 @@
             android:textSize="50sp"
             android:id="@+id/newGame"
             android:background="@color/colorPrimary"/>
-    </>
+
+    </LinearLayout>

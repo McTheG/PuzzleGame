@@ -12,22 +12,23 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.elvin.puzzlegame.Victory">
 
-    <TextView
-        android:text="@string/win"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/youWon"
-        android:textSize="100sp"
-        android:gravity="center"
-        android:layout_centerVertical="true"/>
+        <TextView
+            android:text="@string/win"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/youWon"
+            android:textSize="100sp"
+            android:gravity="center"
+            android:layout_centerVertical="true"/>
 
-    <Button
-        android:text="@string/playAgain"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/playAgain"
-        android:onClick="NewGame"
-        android:layout_below="@id/youWon"
-        android:textColor="@android:color/background_dark"
-        android:background="@color/colorAccent" />
-</RelativeLayout>
+        <Button
+            android:text="@string/playAgain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/playAgain"
+            android:onClick="NewGame"
+            android:textColor="@android:color/background_dark"
+            android:background="@color/colorAccent"
+            android:layout_below="@id/youWon"/>
+    
+    </RelativeLayout>
