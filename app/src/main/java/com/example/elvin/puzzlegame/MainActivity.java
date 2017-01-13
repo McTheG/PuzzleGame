@@ -17,6 +17,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Random;
 
 
@@ -75,7 +76,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         randomNumber2 = r.nextInt(10) + 0;
         randomNumber3 = r.nextInt(10) + 0;
 
-        String a= Integer.toString(randomNumber1);
+        String a = Integer.toString(randomNumber1);
         String b= Integer.toString(randomNumber2);
         String c= Integer.toString(randomNumber3);
 
@@ -89,8 +90,13 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         lock3Number = 0;
         selectedLock = 1;
 
+        ArrayList<String> arrayList = new ArrayList<String>();
+        arrayList.add(a);
+        arrayList.add(b);
+        arrayList.add(c);
+        Collections.shuffle(arrayList);
 
-        numberHint.setText(a + b + c);
+        numberHint.setText(arrayList.get(0) + arrayList.get(1) + arrayList.get(2));
     }
 
     public void onClick(View v) {
