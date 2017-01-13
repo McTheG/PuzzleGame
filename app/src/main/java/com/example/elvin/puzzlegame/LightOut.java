@@ -40,7 +40,7 @@ public class LightOut extends AppCompatActivity implements SensorEventListener {
         float lux = event.values[0];
         TextView text  = (TextView) findViewById(R.id.value);
         text.setText("" + lux);
-        if (lux < 40){
+        if (lux <= 40){
             Continue();
         }
         // Do something with this sensor value.
