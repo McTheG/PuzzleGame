@@ -14,7 +14,7 @@ public class Victory extends AppCompatActivity {
         }
 
     public void NewGame(View view) {
-        Intent intent = new Intent(this, CodeGame.class);
+        Intent intent = new Intent(this, LightOut.class);
         startActivity(intent);
     }
 }

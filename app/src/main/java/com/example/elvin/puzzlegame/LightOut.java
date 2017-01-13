@@ -60,7 +60,7 @@ public class LightOut extends AppCompatActivity implements SensorEventListener {
     }
 
     public void Continue() {
-        Intent intent = new Intent(this, Distance.class);
+        Intent intent = new Intent(this, CodeGame.class);
         startActivity(intent);
     }
 }

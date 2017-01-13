@@ -51,7 +51,7 @@ public class CodeGame extends AppCompatActivity implements SensorEventListener {
         mySensor = SensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
 
         //Register SensorListener
-        SensorManager.registerListener(this,mySensor,SensorManager.SENSOR_DELAY_NORMAL);
+        SensorManager.registerListener(this,mySensor,mySensor.getMinDelay());
 
         //Assign textviews
         textX = (TextView) findViewById(R.id.textX);
@@ -76,9 +76,9 @@ public class CodeGame extends AppCompatActivity implements SensorEventListener {
 
     public void randomizer(){
         Random r = new Random();
-        randomNumber1 = r.nextInt(10) + 0;
-        randomNumber2 = r.nextInt(10) + 0;
-        randomNumber3 = r.nextInt(10) + 0;
+        randomNumber1 = r.nextInt(10);
+        randomNumber2 = r.nextInt(10);
+        randomNumber3 = r.nextInt(10);
 
         String a = Integer.toString(randomNumber1);
         String b= Integer.toString(randomNumber2);
@@ -94,7 +94,7 @@ public class CodeGame extends AppCompatActivity implements SensorEventListener {
         lock3Number = 0;
         selectedLock = 1;
 
-        ArrayList<String> arrayList = new ArrayList<String>();
+        ArrayList<String> arrayList = new ArrayList<>();
         arrayList.add(a);
         arrayList.add(b);
         arrayList.add(c);
@@ -436,7 +436,7 @@ public class CodeGame extends AppCompatActivity implements SensorEventListener {
     }
 
     public void Continue() {
-        Intent intent = new Intent(this, LightOut.class);
+        Intent intent = new Intent(this, Distance.class);
         startActivity(intent);
     }
 }
