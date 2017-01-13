@@ -1,6 +1,7 @@
 package com.example.elvin.puzzlegame;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -13,12 +14,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Random;
 
+
+import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 
 public class MainActivity extends AppCompatActivity implements SensorEventListener {
@@ -412,6 +416,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         {
             Toast.makeText(MainActivity.this,"You solved the puzzle!!!", Toast.LENGTH_SHORT).show();
             numberHint.setTextColor(Color.RED);
+            Continue();
         }
         else{
             numberHint.setTextColor(Color.BLACK);
@@ -421,4 +426,12 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
     }
+
+    public void Continue() {
+        // Do something in response to button
+
+        Intent intent = new Intent(this, LightOut.class);
+        startActivity(intent);
+    }
+
 }
