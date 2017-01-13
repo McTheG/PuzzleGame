@@ -1,17 +1,15 @@
 package com.example.elvin.puzzlegame;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
-import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.ImageView;
 
 public class LightOut extends AppCompatActivity implements SensorEventListener {
     private SensorManager mSensorManager;
@@ -35,15 +33,10 @@ public class LightOut extends AppCompatActivity implements SensorEventListener {
 
     @Override
     public final void onSensorChanged(SensorEvent event) {
-        // The light sensor returns a single value.
-        // Many sensors return 3 values, one for each axis.
         float lux = event.values[0];
-        TextView text  = (TextView) findViewById(R.id.value);
-        text.setText("" + lux);
         if (lux <= 40){
             Continue();
         }
-        // Do something with this sensor value.
     }
 
     @Override
@@ -69,7 +62,6 @@ public class LightOut extends AppCompatActivity implements SensorEventListener {
     }
 
     public void Continue() {
-        // Do something in response to button
         Intent intent = new Intent(this, Distance.class);
         startActivity(intent);
     }

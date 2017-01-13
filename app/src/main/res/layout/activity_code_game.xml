@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_code_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/lockbackground"
+    tools:context="com.example.elvin.puzzlegame.CodeGame">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textX"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textY"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textZ"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:text="@string/reset"
+            android:layout_width="wrap_content"
+
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/resetButton"
+            android:onClick="onClick"
+            android:background="?android:attr/colorPressedHighlight" />
+
+        <TextView
+            android:text="@string/_000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/numberHint"
+            android:textSize="50sp"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:background="@drawable/paper"
+            android:gravity="center_vertical"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="@string/lock1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lock1_button"
+                android:onClick="onClick"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="@string/lock2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lock2_button"
+                android:onClick="onClick"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="@string/lock3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lock3_button"
+                android:onClick="onClick"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:background="@drawable/number0"
+                android:id="@+id/lock1_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/underlock1"/>
+
+            <ImageView
+                android:background="@drawable/number0"
+                android:id="@+id/lock2_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/underlock2"/>
+
+            <ImageView
+                android:background="@drawable/number0"
+                android:id="@+id/lock3_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/underlock3"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -18,12 +18,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LightOut" android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".LightOut"
+            android:screenOrientation="portrait" />
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".Distance" android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Distance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Victory"
+            android:label="@string/title_activity_victory"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CodeGame" android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

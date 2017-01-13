@@ -8,7 +8,6 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.TextView;
 
 public class Distance extends AppCompatActivity implements SensorEventListener {
     private SensorManager mSensorManager;
@@ -34,11 +33,7 @@ public class Distance extends AppCompatActivity implements SensorEventListener {
 
     @Override
     public final void onSensorChanged(SensorEvent event) {
-        // The light sensor returns a single value.
-        // Many sensors return 3 values, one for each axis.
         float dis = event.values[0];
-        TextView text  = (TextView) findViewById(R.id.value);
-        text.setText("" + dis);
         if (dis <= 10){
             Continue();
         }
@@ -68,10 +63,7 @@ public class Distance extends AppCompatActivity implements SensorEventListener {
     }
 
     public void Continue() {
-        // Do something in response to button
-
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, Victory.class);
         startActivity(intent);
     }
-
 }
